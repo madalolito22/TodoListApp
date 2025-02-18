@@ -24,13 +24,6 @@ class TaskViewModel : ViewModel() {
                 description = "Tarea 1, autogenerada, con prioridad media",
                 dueDate = "17-02-2025",
                 priority = Task.Priority.MEDIUM
-            ),
-            Task(
-                id = 2,
-                name = "Reunión importante",
-                description = "Preparar presentación",
-                dueDate = "17-02-2025",
-                priority = Task.Priority.HIGH
             )
         )
         _tasks.value = sampleTasks

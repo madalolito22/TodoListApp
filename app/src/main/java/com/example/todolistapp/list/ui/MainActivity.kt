@@ -246,7 +246,7 @@ private fun AddTaskDialog(onDismiss: () -> Unit, onAddTask: (Task) -> Unit) {
                 }
                 Spacer(modifier = Modifier.height(8.dp))
                 Text("Prioridad:")
-                Task.Priority.values().forEach { p ->
+                Task.Priority.entries.forEach { p ->
                     Row(verticalAlignment = Alignment.CenterVertically) {
                         RadioButton(
                             selected = priority == p,
